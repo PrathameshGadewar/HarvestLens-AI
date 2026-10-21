@@ -1,0 +1,15 @@
+# Vercel deployment exclusions
+dataset/
+runs/
+__pycache__/
+*.py[cod]
+.git/
+.env
+.venv/
+env/
+venv/
+harvestlens.db*
+*.db*
+evaluation/reports/
+scripts/
+tests/
