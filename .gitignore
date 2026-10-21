@@ -1,0 +1,42 @@
+# Python byte-code & caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Database files & SQLite locks
+harvestlens.db
+harvestlens.db-journal
+harvestlens.db-wal
+harvestlens.db-shm
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Uploads directory contents (preserve structure)
+uploads/photos/*
+!uploads/photos/.gitkeep
+
+# Machine Learning / Ultralytics runs & caches
+runs/
+*.cache
+dataset/**/labels.cache
+dataset/**/*.cache
+
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

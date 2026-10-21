@@ -1,0 +1,37 @@
+names:
+- Apple Overripe
+- Apple Ripe
+- Apple Rotten
+- Apple Unripe
+- Banana Overripe
+- Banana Ripe
+- Banana Rotten
+- Banana Unripe
+- Grape Overripe
+- Grape Ripe
+- Grape Rotten
+- Grape Unripe
+- Mango Overripe
+- Mango Ripe
+- Mango Rotten
+- Mango Unripe
+- Melon Overripe
+- Melon Ripe
+- Melon Rotten
+- Melon Unripe
+- Orange Overripe
+- Orange Ripe
+- Orange Rotten
+- Orange Unripe
+- Peach Overripe
+- Peach Ripe
+- Peach Rotten
+- Peach Unripe
+- Pear Overripe
+- Pear Ripe
+- Pear Rotten
+- Pear Unripe
+nc: 32
+path: D:\B. Tech\5th Sem\CSE471  DEEP LEARNING FOR COMPUTER VISION\HarvestLens-AI\dataset
+test: test/images
+val: valid/images
