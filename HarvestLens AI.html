@@ -120,8 +120,9 @@ footer{background:var(--g);color:#9db3a8;padding:24px 0;font-size:13px}
 /* Developer Attribution Badge with Animated Farmer Cap on 'P' */
 .dev-credit{position:fixed;bottom:16px;right:20px;z-index:40;display:inline-flex;align-items:center;gap:6px;padding:7px 15px;background:var(--card);border:1.5px solid var(--bd);border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.08);font-size:12px;font-weight:700;color:var(--tx);backdrop-filter:blur(10px);user-select:none;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 .dev-credit:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(25,61,43,.18);border-color:var(--y)}
-.farmer-p-wrap{position:relative;display:inline-block;color:var(--g);font-weight:900}
-.farmer-cap-svg{position:absolute;top:-10px;left:-3px;width:18px;height:12px;pointer-events:none;transform-origin:65% 85%;animation:hatWiggle 3.2s ease-in-out infinite;filter:drop-shadow(0 1px 2px rgba(0,0,0,.25))}
+.dev-name{display:inline-flex;align-items:baseline;color:var(--tx);font-weight:800}
+.farmer-p-wrap{position:relative;display:inline-block;color:var(--tx);font-weight:800}
+.farmer-cap-svg{position:absolute;top:-9px;left:-4px;width:18px;height:12px;pointer-events:none;transform-origin:65% 85%;animation:hatWiggle 3.2s ease-in-out infinite;filter:drop-shadow(0 1px 2px rgba(0,0,0,.25))}
 @keyframes hatWiggle{0%,100%{transform:rotate(-6deg) translateY(0)}18%{transform:rotate(14deg) translateY(-2px)}32%{transform:rotate(-4deg) translateY(0)}48%{transform:rotate(8deg) translateY(-1.5px)}62%{transform:rotate(0deg) translateY(0)}}
 .dev-credit:hover .farmer-cap-svg{animation:hatTip .55s ease-in-out infinite alternate}
 @keyframes hatTip{0%{transform:rotate(0deg) translateY(0)}100%{transform:rotate(24deg) translateY(-4px)}}
@@ -2003,18 +2004,20 @@ function App(){
 
   <div class="dev-credit" title="HarvestLens AI · Developed by Prathamesh Gadewar">
     <span class="mu" style=${{fontSize:11,marginRight:2}}>Developed by</span>
-    <span class="farmer-p-wrap">
-      <svg class="farmer-cap-svg" viewBox="0 0 28 18" fill="none" aria-hidden="true">
-        <!-- Straw Hat Crown -->
-        <path d="M7 11 C8 3.5, 20 3.5, 21 11 Z" fill="#E5B25D"/>
-        <!-- Dark Green Ribbon Band -->
-        <path d="M7.5 10.5 C11 9, 17 9, 20.5 10.5 C20 11.5, 8 11.5, 7.5 10.5 Z" fill="#2E5A27"/>
-        <!-- Straw Hat Curved Wide Brim -->
-        <path d="M2 13 C8 9.5, 20 9.5, 26 13 C22 15.5, 6 15.5, 2 13 Z" fill="#F4CA78"/>
-        <path d="M2 13 C8 10.5, 20 10.5, 26 13" stroke="#D39738" stroke-width="0.8" fill="none"/>
-      </svg>
-      P
-    </span><span style=${{color:'var(--tx)'}}>rathamesh Gadewar</span>
+    <span class="dev-name">
+      <span class="farmer-p-wrap">
+        <svg class="farmer-cap-svg" viewBox="0 0 28 18" fill="none" aria-hidden="true">
+          <!-- Straw Hat Crown -->
+          <path d="M7 11 C8 3.5, 20 3.5, 21 11 Z" fill="#E5B25D"/>
+          <!-- Dark Green Ribbon Band -->
+          <path d="M7.5 10.5 C11 9, 17 9, 20.5 10.5 C20 11.5, 8 11.5, 7.5 10.5 Z" fill="#2E5A27"/>
+          <!-- Straw Hat Curved Wide Brim -->
+          <path d="M2 13 C8 9.5, 20 9.5, 26 13 C22 15.5, 6 15.5, 2 13 Z" fill="#F4CA78"/>
+          <path d="M2 13 C8 10.5, 20 10.5, 26 13" stroke="#D39738" stroke-width="0.8" fill="none"/>
+        </svg>
+        P
+      </span><span>rathamesh Gadewar</span>
+    </span>
   </div>
 
   <button class="btn dk fab" aria-label="Open camera"  onClick=${()=>go('studio','camera')}><${Ic} n="camera" s=${24}/></button>
